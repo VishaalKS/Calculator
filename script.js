@@ -1,4 +1,9 @@
-    var btn = document.querySelectorAll('.button');
+ 
+
+
+
+
+   var btn = document.querySelectorAll('.button');
 
     calc.demo.value = 0;
 
@@ -9,7 +14,7 @@
 
             // `e.currentTarget` or `this`
             var btnClicked = this.getAttribute('data-value');
-
+            
             if(document.getElementById("demo").value==0){
 
             	document.getElementById("demo").value = btnClicked;
@@ -150,3 +155,41 @@ function yas(){
 }
 
 sel.addEventListener("change", yas);
+
+
+
+
+// ---------------------------------For Show-Hide---------------------------------------
+
+
+   	
+   	var selScien = document.getElementById("scientific_div");
+   	var selProg = document.getElementById("prog_div");
+   	selProg.style.display="none";
+
+   	
+	function showScientific(){
+   	selScien.style.display="block";
+   	selProg.style.display="none";
+
+	}
+
+
+	function showProg(){
+   	selScien.style.display="none";
+   	selProg.style.display="block";
+
+	}
+
+// ---------------------------------For the Programmer Mode---------------------------------------
+
+
+
+	document.getElementById("evaluate_prog").addEventListener("click", myFunction);
+
+	
+
+
+
+
+
