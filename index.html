@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+	<div>
+		<button onclick="showScientific();">Scientific</button>
+		<button onclick="showProg();">Programmer</button>
+	</div>
+
+
+
 	<form name="calc">
 
 		<input name="demo" value="0" id="demo"></input>
@@ -15,7 +23,7 @@
 
 
 
-	<div class="container">	
+	<div class="container" id="scientific_div">	
 
 		<div id="sin" > sin </div>
 		<div id="cos" > cos </div>
@@ -65,9 +73,36 @@
 	</div>
 
 
-	<div class="container_prog">
+<!---------------------------------For the Programmer Mode--------------------------------------->
+
+
+	<div class="container_prog" id="prog_div">
 		
-		<div class="button_prog" data-value="  "> </div>
+		<div class="button_prog" data-value="A">A</div>
+		<div class="button_prog" data-value="B">B</div>
+		<div class="button_prog" data-value="C">C</div>
+		<div class="button_prog" data-value="D">D</div>
+
+
+		<div class="button_prog" data-value="E">E</div>
+		<div class="button_prog" data-value="F">F</div>
+		<div class="button_prog" data-value="1">1</div>
+		<div class="button_prog" data-value="2">2</div>
+
+		<div class="button_prog" data-value="3">3</div>
+		<div class="button_prog" data-value="4">4</div>
+		<div class="button_prog" data-value="5">5</div>
+		<div class="button_prog" data-value="6">6</div>
+
+
+		<div class="button_prog" data-value="7">7</div>
+		<div class="button_prog" data-value="8">8</div>
+		<div class="button_prog" data-value="9">9</div>
+		<div class="button_prog" data-value="0">0</div>
+
+		<div id="evaluate_prog" > = </div>	
+
+		<div > </div>
 
 	</div>
 
