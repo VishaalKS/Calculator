@@ -202,7 +202,65 @@
     font-family: sans-serif;
 }
 
+#demo_hex {
+    border: 0;
+    text-align: right;
+    width: 278px;
+    font-size: 26px;
+    font-weight: 900;
+    background:#f2f2f2;
+    padding: 6px 10px;
+    margin: 0 574px;
 
+}
+
+#demo_bin {
+    border: 0;
+    text-align: right;
+    width: 278px;
+    font-size: 26px;
+    font-weight: 900;
+    background:#f2f2f2;
+    padding: 6px 10px;
+    margin: 0 574px;
+
+}
+
+#demo_dec {
+    border: 0;
+    text-align: right;
+    width: 278px;
+    font-size: 26px;
+    font-weight: 900;
+    background:#f2f2f2;
+    padding: 6px 10px;
+    margin: 0 574px;
+
+}
+
+#demo_oct {
+    border: 0;
+    text-align: right;
+    width: 278px;
+    font-size: 26px;
+    font-weight: 900;
+    background:#f2f2f2;
+    padding: 6px 10px;
+    margin: 0 574px;
+
+}
+
+#demo_main {
+    border: 0;
+    text-align: right;
+    width: 278px;
+    font-size: 26px;
+    font-weight: 900;
+    background:#f2f2f2;
+    padding: 6px 10px;
+    margin: 0 574px;
+
+}
 
 
 

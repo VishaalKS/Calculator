@@ -6,6 +6,7 @@
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
 	<div>
@@ -13,17 +14,14 @@
 		<button onclick="showProg();">Programmer</button>
 	</div>
 
+	<div class="container" id="scientific_div">	
 
-
-	<form name="calc">
+		<form name="calc">
 
 		<input name="demo" value="0" id="demo"></input>
 
 	</form>
 
-
-
-	<div class="container" id="scientific_div">	
 
 		<div id="sin" > sin </div>
 		<div id="cos" > cos </div>
@@ -77,6 +75,15 @@
 
 
 	<div class="container_prog" id="prog_div">
+
+
+		<form name="calc_prog">	
+			<input name="demo_hex" value="hex" id="demo_hex">
+			<input name="demo_bin" value="bin" id="demo_bin">
+			<input name="demo_dec" value="dec" id="demo_dec">
+			<input name="demo_oct" value="oct" id="demo_oct">
+			<input name="demo_main" value="0" id="demo_main">
+		</form>
 		
 		<div class="button_prog" data-value="A">A</div>
 		<div class="button_prog" data-value="B">B</div>

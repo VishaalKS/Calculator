@@ -1,8 +1,3 @@
- 
-
-
-
-
    var btn = document.querySelectorAll('.button');
 
     calc.demo.value = 0;
@@ -183,11 +178,46 @@ sel.addEventListener("change", yas);
 
 // ---------------------------------For the Programmer Mode---------------------------------------
 
+    var hex = calc_prog.demo_hex.value;
+    var dec = calc_prog.demo_dec.value;
+    var oct = calc_prog.demo_oct.value;
+    var bin = calc_prog.demo_oct.value;
+    var main = calc_prog.demo_main.value;
 
 
-	document.getElementById("evaluate_prog").addEventListener("click", myFunction);
 
-	
+	document.getElementById("evaluate_prog").addEventListener("click",myFunction);
+
+    document.getElementById("demo_main").addEventListener("keyup",function(){
+
+        hexFunc();
+        binFunc();
+        octFunc();
+        decFunc();
+
+
+    });
+
+	function hexFunc(){
+        var hex = +calc_prog.demo_main.value;
+       calc_prog.demo_hex.value = hex.toString(16);
+    }
+
+    function binFunc(){
+        var bin = +calc_prog.demo_main.value;
+       calc_prog.demo_bin.value = bin.toString(2);
+    }
+
+    function decFunc(){
+        var dec = +calc_prog.demo_main.value;
+       calc_prog.demo_dec.value = dec.toString();
+    }
+
+    function octFunc(){
+        var oct = +calc_prog.demo_main.value;
+       calc_prog.demo_oct.value = oct.toString(8);
+    }
+
 
 
 
