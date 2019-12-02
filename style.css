@@ -11,7 +11,6 @@
 }
 
 #evaluate{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -22,7 +21,6 @@
 }
 
 #c{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -33,7 +31,6 @@
 }
 
 #clear{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -44,7 +41,6 @@
 }
 
 #delete{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -55,7 +51,6 @@
 }
 
 #square{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -66,7 +61,6 @@
 }
 
 #cube{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -77,7 +71,6 @@
 }
 
 #sin{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -88,7 +81,6 @@
 }
 
 #cos{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -99,8 +91,6 @@
 }
 
 #tan{
-
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -111,7 +101,6 @@
 }
 
 #log{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -132,7 +121,6 @@
 }
 
 .selct{
-
     width: 70px;
     float: left;
     cursor: pointer;
@@ -145,7 +133,6 @@
 .container{
  width: 370px;
  margin: 0 auto;
-
 }
 
 #demo {
@@ -156,15 +143,52 @@
     font-weight: 900;
     background:#f2f2f2;
     padding: 19px 10px;
-    margin: 0 574px;
-
 }
 
 .logo {
-
     position: relative;
     top: 10px;
+}
 
+
+#sqrt{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+#pi{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+#fact{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+#plusmin{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #f2f2f2;
+    font-family: sans-serif;
 }
 
 
@@ -187,12 +211,10 @@
 .container_prog{
  width: 370px;
  margin: 0 auto;
-
 }
 
 
 #evaluate_prog{
-
     float: left;
     cursor: pointer;
     text-align: center;
@@ -210,8 +232,6 @@
     font-weight: 900;
     background:#f2f2f2;
     padding: 6px 10px;
-    margin: 0 574px;
-
 }
 
 #demo_bin {
@@ -221,9 +241,7 @@
     font-size: 26px;
     font-weight: 900;
     background:#f2f2f2;
-    padding: 6px 10px;
-    margin: 0 574px;
-
+    padding: 6px 10px;   
 }
 
 #demo_dec {
@@ -234,8 +252,6 @@
     font-weight: 900;
     background:#f2f2f2;
     padding: 6px 10px;
-    margin: 0 574px;
-
 }
 
 #demo_oct {
@@ -246,8 +262,6 @@
     font-weight: 900;
     background:#f2f2f2;
     padding: 6px 10px;
-    margin: 0 574px;
-
 }
 
 #demo_main {
@@ -256,10 +270,19 @@
     width: 278px;
     font-size: 26px;
     font-weight: 900;
-    background:#f2f2f2;
+    background:#bdbcbc;
     padding: 6px 10px;
-    margin: 0 574px;
+}
 
+
+#clear_prog{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
 }
 
 
