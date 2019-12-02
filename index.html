@@ -8,7 +8,11 @@
 </head>
 
 <body>
+	<!---------------------------------For the Standard Mode----------------------------------------->
 
+	<div></div>
+
+	<!---------------------------------For the Scientific Mode--------------------------------------->
 	<div>
 		<button onclick="showScientific();">Scientific</button>
 		<button onclick="showProg();">Programmer</button>
@@ -18,9 +22,9 @@
 
 		<form name="calc">
 
-		<input name="demo" value="0" id="demo"></input>
+			<input name="demo" value="0" id="demo"></input>
 
-	</form>
+		</form>
 
 
 		<div id="sin" > sin </div>
@@ -33,6 +37,10 @@
 		<div id="mc" > Mc </div>
 		<div class="selct"><select id="select"><option value="">MR</option></select></div>
 
+		<div id="sqrt" > √</div>
+		<div id="pi" > π </div>
+		<div id="fact" > n! </div>
+		<div id="plusmin" > ∓ </div>
 
 		<div id="clear" data-value="C" > CE </div>
 		<div id="delete"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
@@ -71,7 +79,7 @@
 	</div>
 
 
-<!---------------------------------For the Programmer Mode--------------------------------------->
+	<!---------------------------------For the Programmer Mode--------------------------------------->
 
 
 	<div class="container_prog" id="prog_div">
@@ -85,14 +93,20 @@
 			<input name="demo_main" value="0" id="demo_main">
 		</form>
 		
-		<div class="button_prog" data-value="A">A</div>
+		<!-- <div class="button_prog" data-value="A">A</div>
 		<div class="button_prog" data-value="B">B</div>
 		<div class="button_prog" data-value="C">C</div>
 		<div class="button_prog" data-value="D">D</div>
 
 
 		<div class="button_prog" data-value="E">E</div>
-		<div class="button_prog" data-value="F">F</div>
+		<div class="button_prog" data-value="F">F</div> -->
+
+		<div id="clear_prog" data-value="C" > CE </div>
+		<div id="sqrt" > √</div>
+		<div id="fact" > n! </div>
+		<div id="delete"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
+
 		<div class="button_prog" data-value="1">1</div>
 		<div class="button_prog" data-value="2">2</div>
 
@@ -112,6 +126,8 @@
 		<div > </div>
 
 	</div>
+
+
 
 
 
