@@ -9,14 +9,64 @@
 
 <body>
 	<!---------------------------------For the Standard Mode----------------------------------------->
-
-	<div></div>
-
-	<!---------------------------------For the Scientific Mode--------------------------------------->
 	<div>
+		<button onclick="showStand();">Standard</button>
 		<button onclick="showScientific();">Scientific</button>
 		<button onclick="showProg();">Programmer</button>
 	</div>
+
+
+	<div class="container_stand" id="stand_div">
+
+
+		<form name="calc_stand">	
+			<input name="demo_stand" value="0" id="demo_stand">
+		</form>
+		
+		<div class="button" data-value="%">%</div>	
+		<div id="sqrt" > √</div>
+		<div id="square"> x2 </div>
+		<div id="mc" > Mc </div>
+		<div class="selct"><select id="select"><option value="">MR</option></select></div>
+
+
+		<div id="clear_stand" data-value="C" > CE </div>
+		<div id="delete_stand"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
+
+		<div class="button_stand" data-value="/">/</div>
+
+
+		<div class="button_stand" data-value="7">7</div>
+		<div class="button_stand" data-value="8">8</div>
+		<div class="button_stand" data-value="9">9</div>
+		<div class="button_stand" data-value="*">*</div>
+
+
+
+		<div class="button_stand" data-value="4">4</div>
+		<div class="button_stand" data-value="5">5</div>
+		<div class="button_stand" data-value="6">6</div>
+		<div class="button_stand" data-value="-">-</div>
+
+
+		<div class="button_stand" data-value= 1 >1</div>
+		<div class="button_stand" data-value= 2 >2</div>
+		<div class="button_stand" data-value="3">3</div>
+		<div class="button_stand" data-value="+">+</div>
+
+
+		<div id="plusmin" > ∓ </div>
+		<div class="button_stand" data-value="0">0</div>
+		<div class="button_stand" data-value=".">.</div>
+		<div id="evaluate_stand" > = </div>	
+
+	</div>
+		
+
+	</div>
+
+	<!---------------------------------For the Scientific Mode--------------------------------------->
+	
 
 	<div class="container" id="scientific_div">	
 
