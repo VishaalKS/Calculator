@@ -1,3 +1,28 @@
+
+// ---------------------------------For Standard-Calculator---------------------------------------
+    
+     var btn_stand = document.querySelectorAll('.button_stand');
+
+    Array.prototype.forEach.call(btn_stand, function(btn) {
+       btn.addEventListener('click', function() {
+
+            // `e.currentTarget` or `this`
+            var btnClicked = this.getAttribute('data-value');
+            
+            if(document.getElementById("demo_stand").value==0){
+
+                document.getElementById("demo_stand").value = btnClicked;
+
+            }else{
+
+                document.getElementById("demo_stand").value += btnClicked;
+            }
+        });
+   });
+
+// ---------------------------------For Scientific-Calculator---------------------------------------
+
+
    var btn = document.querySelectorAll('.button');
 
    calc.demo.value = 0;
@@ -191,23 +216,33 @@ sel.addEventListener("change", yas);
 
 // ---------------------------------For Show-Hide---------------------------------------
 
-
-
 var selScien = document.getElementById("scientific_div");
 var selProg = document.getElementById("prog_div");
+var selStand = document.getElementById("stand_div");
 selProg.style.display="none";
+selScien.style.display="none";
 
 
 function showScientific(){
     selScien.style.display="block";
     selProg.style.display="none";
+    selStand.style.display="none";
 
 }
 
 
 function showProg(){
     selScien.style.display="none";
+    selStand.style.display="none";
     selProg.style.display="block";
+
+}
+
+
+function showStand(){
+    selScien.style.display="none";
+    selStand.style.display="block";
+    selProg.style.display="none";
 
 }
 
