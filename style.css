@@ -18,6 +18,56 @@
 }
 
 
+#sqrt_stand{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
+#square_stand{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
+#mc_stand{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
+.selct_stand{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
+#plusmin_stand{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
 #evaluate_stand{
     float: left;
     cursor: pointer;
@@ -347,7 +397,45 @@
     font-family: sans-serif;
 }
 
+#sqrt_prog{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
 
+#fact_prog{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
+#plusMinus_prog{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
+
+#delete_prog{
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    width: 74.5px;
+    line-height: 56px;
+    background: #e6e6e6;
+    font-family: sans-serif;
+}
 
 
 
