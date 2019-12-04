@@ -8,26 +8,27 @@
 </head>
 
 <body>
-	<!---------------------------------For the Standard Mode----------------------------------------->
+	<!---------------------------------For the Changing Mode----------------------------------------->
+	
 	<div>
-		<button onclick="showStand();">Standard</button>
+		<button onclick="showStand();">	Standard</button>
 		<button onclick="showScientific();">Scientific</button>
 		<button onclick="showProg();">Programmer</button>
 	</div>
 
+	<!---------------------------------For the Standard Mode----------------------------------------->
 
 	<div class="container_stand" id="stand_div">
-
 
 		<form name="calc_stand">	
 			<input name="demo_stand" value="0" id="demo_stand">
 		</form>
 		
-		<div class="button" data-value="%">%</div>	
-		<div id="sqrt" > √</div>
-		<div id="square"> x2 </div>
-		<div id="mc" > Mc </div>
-		<div class="selct"><select id="select"><option value="">MR</option></select></div>
+		<div class="button_stand" data-value="%">%</div>	
+		<div id="sqrt_stand" > √</div>
+		<div id="square_stand"> x2 </div>
+		<div id="mc_stand" > Mc </div>
+		<div class="selct_stand"><select id="select_stand"><option value="">MR</option></select></div>
 
 
 		<div id="clear_stand" data-value="C" > CE </div>
@@ -55,7 +56,7 @@
 		<div class="button_stand" data-value="+">+</div>
 
 
-		<div id="plusmin" > ∓ </div>
+		<div id="plusmin_stand" > ∓ </div>
 		<div class="button_stand" data-value="0">0</div>
 		<div class="button_stand" data-value=".">.</div>
 		<div id="evaluate_stand" > = </div>	
@@ -143,19 +144,18 @@
 			<input name="demo_main" value="0" id="demo_main">
 		</form>
 		
-		<!-- <div class="button_prog" data-value="A">A</div>
-		<div class="button_prog" data-value="B">B</div>
-		<div class="button_prog" data-value="C">C</div>
-		<div class="button_prog" data-value="D">D</div>
+		<div class="button_prog" data-value="|">OR</div>
+		
+		<div class="button_prog" data-value="^">XOR</div>
+		<div class="button_prog" data-value="~">NOT</div>
+		<div class="button_prog" data-value="&">AND</div>
 
-
-		<div class="button_prog" data-value="E">E</div>
-		<div class="button_prog" data-value="F">F</div> -->
 
 		<div id="clear_prog" data-value="C" > CE </div>
-		<div id="sqrt" > √</div>
-		<div id="fact" > n! </div>
-		<div id="delete"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
+		<div id="sqrt_prog" > √</div>
+		<div id="fact_prog" > n! </div>
+
+		<div id="delete_prog"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
 
 		<div class="button_prog" data-value="1">1</div>
 		<div class="button_prog" data-value="2">2</div>
@@ -172,6 +172,10 @@
 		<div class="button_prog" data-value="0">0</div>
 
 		<div id="evaluate_prog" > = </div>	
+
+		<div class="button_prog" data-value="(">(</div>
+		<div class="button_prog" data-value=")">)</div> 
+		<div id="plusMinus_prog" >∓</div> 
 
 		<div > </div>
 
