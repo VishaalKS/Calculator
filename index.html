@@ -10,7 +10,7 @@
 <body>
 	<!---------------------------------For the Changing Mode----------------------------------------->
 	
-	<div>
+	<div class="buttonDivAll">
 		<button onclick="showStand();">	Standard</button>
 		<button onclick="showScientific();">Scientific</button>
 		<button onclick="showProg();">Programmer</button>
@@ -62,130 +62,136 @@
 		<div id="evaluate_stand" > = </div>	
 
 	</div>
-		
-
-	</div>
-
-	<!---------------------------------For the Scientific Mode--------------------------------------->
-	
-
-	<div class="container" id="scientific_div">	
-
-		<form name="calc">
-
-			<input name="demo" value="0" id="demo"></input>
-
-		</form>
 
 
-		<div id="sin" > sin </div>
-		<div id="cos" > cos </div>
-		<div id="tan" > tan </div>
-		<div id="square" > x2 </div>
+</div>
 
-		<div id="cube" > x3 </div>
-		<div id="log" > log10 </div>
-		<div id="mc" > Mc </div>
-		<div class="selct"><select id="select"><option value="">MR</option></select></div>
-
-		<div id="sqrt" > √</div>
-		<div id="pi" > π </div>
-		<div id="fact" > n! </div>
-		<div id="plusmin" > ∓ </div>
-
-		<div id="clear" data-value="C" > CE </div>
-		<div id="delete"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
-
-		<div class="button" data-value="^">^</div>
-		<div class="button" data-value="/">/</div>
+<!---------------------------------For the Scientific Mode--------------------------------------->
 
 
-		<div class="button" data-value="7">7</div>
-		<div class="button" data-value="8">8</div>
-		<div class="button" data-value="9">9</div>
-		<div class="button" data-value="*">*</div>
+<div class="container" id="scientific_div">	
+
+	<form name="calc">
+
+		<input name="demo" value="0" id="demo"></input>
+
+	</form>
 
 
+	<div id="sin" > sin </div>
+	<div id="cos" > cos </div>
+	<div id="tan" > tan </div>
+	<div id="square" > x2 </div>
 
-		<div class="button" data-value="4">4</div>
-		<div class="button" data-value="5">5</div>
-		<div class="button" data-value="6">6</div>
-		<div class="button" data-value="-">-</div>
+	<div id="cube" > x3 </div>
+	<div id="log" > log10 </div>
+	<div id="mc" > Mc </div>
+	<div class="selct"><select id="select"><option value="">MR</option></select></div>
 
-
-		<div class="button" data-value= 1 >1</div>
-		<div class="button" data-value= 2 >2</div>
-		<div class="button" data-value="3">3</div>
-		<div class="button" data-value="+">+</div>
-
-
-		<div class="button" data-value="%">%</div>
-		<div class="button" data-value="0">0</div>
-		<div class="button" data-value=".">.</div>
-		<div id="evaluate" > = </div>	
-
-		<div id="mr"> </div>
+	<div class="button" data-value="x10" > 10x</div>
+	<div id="exp" > Exp</div>
+	<div class="button" data-value="("> (</div>
+	<div class="button" data-value=")" > )</div>
 
 
-	</div>
+	<div id="sqrt" > √</div>
+	<div id="pi" > π </div>
+	<div id="fact" > n! </div>
+	<div id="plusmin" > ∓ </div>
+
+	<div id="clear" data-value="C" > CE </div>
+	<div id="delete"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
+
+	<div class="button" data-value="^">^</div>
+	<div class="button" data-value="/">/</div>
 
 
-	<!---------------------------------For the Programmer Mode--------------------------------------->
-
-
-	<div class="container_prog" id="prog_div">
-
-
-		<form name="calc_prog">	
-			<input name="demo_hex" value="hex" id="demo_hex">
-			<input name="demo_bin" value="bin" id="demo_bin">
-			<input name="demo_dec" value="dec" id="demo_dec">
-			<input name="demo_oct" value="oct" id="demo_oct">
-			<input name="demo_main" value="0" id="demo_main">
-		</form>
-		
-		<div class="button_prog" data-value="|">OR</div>
-		
-		<div class="button_prog" data-value="^">XOR</div>
-		<div class="button_prog" data-value="~">NOT</div>
-		<div class="button_prog" data-value="&">AND</div>
-
-
-		<div id="clear_prog" data-value="C" > CE </div>
-		<div id="sqrt_prog" > √</div>
-		<div id="fact_prog" > n! </div>
-
-		<div id="delete_prog"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
-
-		<div class="button_prog" data-value="1">1</div>
-		<div class="button_prog" data-value="2">2</div>
-
-		<div class="button_prog" data-value="3">3</div>
-		<div class="button_prog" data-value="4">4</div>
-		<div class="button_prog" data-value="5">5</div>
-		<div class="button_prog" data-value="6">6</div>
-
-
-		<div class="button_prog" data-value="7">7</div>
-		<div class="button_prog" data-value="8">8</div>
-		<div class="button_prog" data-value="9">9</div>
-		<div class="button_prog" data-value="0">0</div>
-
-		<div id="evaluate_prog" > = </div>	
-
-		<div class="button_prog" data-value="(">(</div>
-		<div class="button_prog" data-value=")">)</div> 
-		<div id="plusMinus_prog" >∓</div> 
-
-		<div > </div>
-
-	</div>
+	<div class="button" data-value="7">7</div>
+	<div class="button" data-value="8">8</div>
+	<div class="button" data-value="9">9</div>
+	<div class="button" data-value="*">*</div>
 
 
 
+	<div class="button" data-value="4">4</div>
+	<div class="button" data-value="5">5</div>
+	<div class="button" data-value="6">6</div>
+	<div class="button" data-value="-">-</div>
+
+
+	<div class="button" data-value= 1 >1</div>
+	<div class="button" data-value= 2 >2</div>
+	<div class="button" data-value="3">3</div>
+	<div class="button" data-value="+">+</div>
+
+
+	<div class="button" data-value="%">%</div>
+	<div class="button" data-value="0">0</div>
+	<div class="button" data-value=".">.</div>
+	<div id="evaluate" > = </div>	
+
+	<div id="mr"> </div>
+
+
+</div>
+
+
+<!---------------------------------For the Programmer Mode--------------------------------------->
+
+
+<div class="container_prog" id="prog_div">
+
+
+	<form name="calc_prog">	
+		<input name="demo_hex" value="hex" id="demo_hex">
+		<input name="demo_bin" value="bin" id="demo_bin">
+		<input name="demo_dec" value="dec" id="demo_dec">
+		<input name="demo_oct" value="oct" id="demo_oct">
+		<input name="demo_main" value="0" id="demo_main">
+	</form>
+
+	<div class="button_prog" data-value="|">OR</div>
+
+	<div class="button_prog" data-value="^">XOR</div>
+	<div class="button_prog" data-value="~">NOT</div>
+	<div class="button_prog" data-value="&">AND</div>
+
+
+	<div id="clear_prog" data-value="C" > CE </div>
+	<div id="sqrt_prog" > √</div>
+	<div id="fact_prog" > n! </div>
+
+	<div id="delete_prog"> <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC"></div>
+
+	<div class="button_prog" data-value="1">1</div>
+	<div class="button_prog" data-value="2">2</div>
+
+	<div class="button_prog" data-value="3">3</div>
+	<div class="button_prog" data-value="4">4</div>
+	<div class="button_prog" data-value="5">5</div>
+	<div class="button_prog" data-value="6">6</div>
+
+
+	<div class="button_prog" data-value="7">7</div>
+	<div class="button_prog" data-value="8">8</div>
+	<div class="button_prog" data-value="9">9</div>
+	<div class="button_prog" data-value="0">0</div>
+
+	<div id="evaluate_prog" > = </div>	
+
+	<div class="button_prog" data-value="(">(</div>
+	<div class="button_prog" data-value=")">)</div> 
+	<div id="plusMinus_prog" >∓</div> 
+
+	<div > </div>
+
+</div>
 
 
 
-	<script src="script.js" ></script>
+
+
+
+<script src="script.js" ></script>
 </body>
 </html>
