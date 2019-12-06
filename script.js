@@ -153,11 +153,11 @@ Array.prototype.forEach.call(btn, function(btn) {
             
             if(document.getElementById("demo").value==0){
 
-            	document.getElementById("demo").value = btnClicked;
+                document.getElementById("demo").value = btnClicked;
 
             }else{
 
-            	document.getElementById("demo").value += btnClicked;
+                document.getElementById("demo").value += btnClicked;
             }
         });
 });
@@ -171,7 +171,6 @@ function myFunction(){
       calc.demo.value= eval(calc.demo.value);
   }
 }
-
 
 function clear(){
    calc.demo.value=0;
@@ -257,80 +256,108 @@ function pushStack(){
          queue.shift();
          queue.push(calc.demo.value);
      }else{
-         queue.push(calc.demo.value);		
+         queue.push(calc.demo.value);       
      }
 
      console.log(queue);
-		// console.log(stack.pop());	
-	}
+        // console.log(stack.pop());    
+    }
 
 }
 
 
 function addMemory(){
-	if(Number.isNaN(+calc.demo.value)){
+    if(Number.isNaN(+calc.demo.value)){
 
-	}else{
+    }else{
 
-		var select = document.getElementById("select");
+        var select = document.getElementById("select");
 
-		var option = document.createElement("OPTION");
+        var option = document.createElement("OPTION");
 
-		var qlen = queue.length-1;
+        var qlen = queue.length-1;
 
-		var txt = document.createTextNode(queue[qlen]);
+        var txt = document.createTextNode(queue[qlen]);
 
-		option.appendChild(txt);
+        option.appendChild(txt);
 
-		option.setAttribute("value",queue[qlen]);
+        option.setAttribute("value",queue[qlen]);
 
-		select.insertBefore(option,select.lastChild);
-	}
+        select.insertBefore(option,select.lastChild);
+    }
 }
 
 function del(){
 
-	if(calc.demo.value==""){
-		calc.demo.value= 0;
-	}else if(calc.demo.value==0){
-		calc.demo.value= 0;
-	}else if(calc.demo.value.substring(0, calc.demo.value.length - 1)==0){
-		calc.demo.value= 0;
-	}else{
-		calc.demo.value = calc.demo.value.substring(0, calc.demo.value.length - 1);
-	}
+    if(calc.demo.value==""){
+        calc.demo.value= 0;
+    }else if(calc.demo.value==0){
+        calc.demo.value= 0;
+    }else if(calc.demo.value.substring(0, calc.demo.value.length - 1)==0){
+        calc.demo.value= 0;
+    }else{
+        calc.demo.value = calc.demo.value.substring(0, calc.demo.value.length - 1);
+    }
 }
 
-document.getElementById("evaluate").addEventListener("click", myFunction);
+
+function exp(){
+    calc.demo.value = Math.exp(calc.demo.value);
+}
+
+function tenRaise(){
+
+    var test = calc.demo.value; // display value
+    var arr = test.split(""); // split the value in Array
+    var x =arr.indexOf("x");    // index of x (multiplication) 
+    var first = arr.slice("0",x);   // Number before x
+    var afterX = arr.slice("x");    // Everything after x
+    var last = arr.slice(x);    // array of x
+    var power =last.slice("3"); // Number with raise to power
+
+    calc.demo.value= first*Math.pow("10",power);
+
+}
+
+document.getElementById("evaluate").addEventListener("click", function(){
+    if(calc.demo.value.includes("x")){     
+        tenRaise();
+    }else{
+        myFunction();      
+    }
+});
+
 document.getElementById("clear").addEventListener("click", clear);
-document.getElementById("square").addEventListener("click", sqr);		
-document.getElementById("cube").addEventListener("click", cube);		
-document.getElementById("sin").addEventListener("click", mathSin);		
-document.getElementById("cos").addEventListener("click", mathCos);		
-document.getElementById("tan").addEventListener("click", mathTan);		
+document.getElementById("square").addEventListener("click", sqr);       
+document.getElementById("cube").addEventListener("click", cube);        
+document.getElementById("sin").addEventListener("click", mathSin);      
+document.getElementById("cos").addEventListener("click", mathCos);      
+document.getElementById("tan").addEventListener("click", mathTan);      
 document.getElementById("log").addEventListener("click", mathLog );
 document.getElementById("delete").addEventListener("click", del);
 document.getElementById("mc").addEventListener('click',function(){
-	pushStack();
-	addMemory();
+    pushStack();
+    addMemory();
 });
 document.getElementById("sqrt").addEventListener("click", mathSqrt);
 document.getElementById("pi").addEventListener("click", piVal);
 document.getElementById("plusmin").addEventListener("click", plusMin);
 document.getElementById("fact").addEventListener("click", factorial);
+document.getElementById("exp").addEventListener("click", exp);
+
 
 
 
 var sel = document.getElementById("select");
 function yas(){ 
-	if(calc.demo.value==0){
+    if(calc.demo.value==0){
 
-		calc.demo.value = sel.value;
-	}else{
-		calc.demo.value += sel.value;
-	}
+        calc.demo.value = sel.value;
+    }else{
+        calc.demo.value += sel.value;
+    }
 
-	sel.value="";
+    sel.value="";
 
 }
 
@@ -487,9 +514,9 @@ function plusMin_prog(){
 
         calc_prog.demo_main.value = calc_prog.demo_main.value.substring(1,calc_prog.demo_main.value.length);
         hexFunc();
-    binFunc();
-    octFunc();
-    decFunc();
+        binFunc();
+        octFunc();
+        decFunc();
     }
 
 }
@@ -561,20 +588,64 @@ function factorial_prog(){
 
     }
 
+    // Function for - XOR (^) Function 
 
 
+    function bitwiseXor(){
+
+        var main_value = calc_prog.demo_main.value;
+        var split_value = main_value.split("^");
+
+        calc_prog.demo_main.value ="0b"+parseInt(split_value[0]).toString(2)^"0b"+parseInt(split_value[1]).toString(2);
+
+        hexFunc();
+        binFunc();
+        octFunc();
+        decFunc();
+
+    }
+
+    // Function for - NOT (~) Function 
+
+
+    function bitwiseNot(){
+
+        var main_value = calc_prog.demo_main.value;
+        var split_value = main_value.split("~");
+
+        calc_prog.demo_main.value = ~parseInt(split_value[1]);
+
+        hexFunc();
+        binFunc();
+        octFunc();
+        decFunc();
+
+    }
 
 // For the Evaluating the Bitwise Calculations
 
 document.getElementById("evaluate_prog").addEventListener("click",function(){
-        myFunction();
-        if(calc_prog.demo_main.value)
-        bitwiseOr();
+    myFunction();
+    if(calc_prog.demo_main.value.includes("|")){
+        bitwiseOr();           
+    }else if(calc_prog.demo_main.value.includes("&")){
         bitwiseAnd();
-    });
+    }else if(calc_prog.demo_main.value.includes("^")){
+        bitwiseXor();
+    }else if(calc_prog.demo_main.value.includes("~")){
+        bitwiseNot();
+    }
+});
 
 document.getElementById("clear_prog").addEventListener("click",clear_prog);
 document.getElementById("demo_main").addEventListener("keyup",function(){
+    hexFunc();
+    binFunc();
+    octFunc();
+    decFunc();
+});
+
+document.getElementById("demo_hex").addEventListener("keyup",function(){
     hexFunc();
     binFunc();
     octFunc();
